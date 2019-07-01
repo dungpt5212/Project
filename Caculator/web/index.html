@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function cal() {
+                var n1 = parseInt(document.getElementById('n1').value);
+                var n2 = parseInt(document.getElementById('n2').value);
+                var ope = document.getElementById('operators').value;
+
+                if (n1 === "" || n2 === "") {
+                    alert('Không được để trống');
+                } else if (n1 != parseInt(n1) || n2 != parseInt(n2)) {
+                    alert('Chỉ được nhập số tự nhiên');
+                } else if (parseInt(n2) === 0 && ope === '/') {
+                    alert('Số bị chia phải khác 0');
+                } else {
+                    if (ope === '+') {
+                        document.getElementById('result').value = n1 + n2;
+                    }else if (ope === '-') {
+                        document.getElementById('result').value = n1 - n2;
+                    }else if (ope === 'x') {
+                        document.getElementById('result').value = n1 * n2;
+                    }else if (ope === '/') {
+                        document.getElementById('result').value = n1 / n2;
+                    }
+                }
+            }
+
+            function reset() {
+                
+               document.getElementById("myForm").reset();
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <form action="index.html" name="frmCalc" id="myForm" method="GET">
+            Số thứ nhất :
+            <input type="text" id="n1"><br/><br/>
+            Số thứ hai : 
+            <input type="text" id="n2"><br/><br/>
+            Phép tính : 
+            <select id="operators">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="x">x</option>
+                <option value="/">/</option>
+            </select><br/><br/>
+            Kết quả : 
+            <input type="text" id="result" disabled><br/><br/>
+            <button onclick="cal();" type="button">Tính Toán</button>
+            <button onclick="reset();" type="button">Làm Lại</button>
+        </form>
+            
+        
+    </body>
+</html>
