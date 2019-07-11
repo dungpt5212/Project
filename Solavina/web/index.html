@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            #svn{
+                background-color:gray;
+                font: bold 15px/35px Arial;
+                color: white;
+            }
+            #sola{
+                background-color:whitesmoke;
+                font: bold 15px/35px Arial;
+            }
+            #head{
+                border-style: solid;
+                border-color: orange;
+            }
+            #content{
+                border-style: solid;
+                border-color: blue;
+            }
+            #left{
+                border-style: solid;
+                border-color: blue;
+            }
+            #right{
+                border-style: solid;
+                border-color: blue;
+            }
+        </style>
+        <title>Solavina</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div id="head" class="row">
+            <div id="svn" class="col-sm-4">SVN</div>
+            <div id="sola" class="col-sm-8">Công ty cổ phần Solavina</div>
+        </div>
+        <div id="content" class="row">
+            <div id="left" class="col-sm-8">
+                <table class="table">
+                    <tr style="background-color: blue;color: white;font: bold 13px/10px Arial;">
+                        <th>TC</th>
+                        <th>Trần</th>
+                        <th>Sàn</th>
+                        <th>Cao</th>
+                        <th>Thấp</th>
+                        <th>TKL</th>
+                        <th>Dư mua</th>
+                        <th>Dư bán</th>
+                        <th>NN mua</th>
+                        <th>NN bán</th>
+                    </tr>
+                    <tr style="background-color: gray;font: bold 12px/4px Arial;">
+                        <td style="color: goldenrod;">2.5</td>
+                        <td style="color: darkviolet;">2.7</td>
+                        <td style="color: lightskyblue;">2.3</td>
+                        <td style="color: darkviolet;">2.7</td>
+                        <td style="color: goldenrod;">2.5</td>
+                        <td style="color: chartreuse;">531,20</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table class="table">
+                    <tr>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 30%;background-color: green" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                        <div class="progress-bar" role="progressbar" style="width: 70%;background-color: red" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                    </tr>
+                    <tr style="color: white;font: bold 13px/10px Arial;">
+                        <th style="background-color: #00cc66">KL Mua</th>
+                        <th style="background-color: #00cc66">Mua</th>
+                        <th style="background-color: blue">Giá</th>
+                        <th style="background-color: blue">+/-</th>
+                        <th style="background-color: blue">KL</th>
+                        <th style="background-color: red">Bán</th>
+                        <th style="background-color: red">KL Bán</th>
+                    </tr>
+                    <tr style="background-color: black">
+                        <td style="color: orange">105,60</td>
+                        <td style="color: orange">2.5</td>
+                        <td style="color: chartreuse">2.6</td>
+                        <td style="color: chartreuse">0.10</td>
+                        <td style="color: chartreuse">20</td>
+                        <td style="color: chartreuse">2.6</td>
+                        <td style="color: chartreuse">5,80</td>
+                    </tr>
+                    <tr style="background-color: black">
+                        <td style="color: red">62,10</td>
+                        <td style="color: red">2.4</td>
+                        <td style="color: chartreuse"></td>
+                        <td style="color: chartreuse"></td>
+                        <td style="color: chartreuse"></td>
+                        <td style="color: fuchsia">2.7</td>
+                        <td style="color: fuchsia">274,90</td>
+                    </tr>
+                    <tr style="background-color: black">
+                        <td style="color: aqua">44,70</td>
+                        <td style="color: aqua">2.3</td>
+                        <td style="color: chartreuse"></td>
+                        <td style="color: chartreuse"></td>
+                        <td style="color: chartreuse"></td>
+                        <td style="color: fuchsia"></td>
+                        <td style="color: fuchsia"></td>
+                    </tr>
+                </table>
+                <div class="row" style="background-color: gray;">
+                    <div class="col-sm-1"><button style='font-size:24px'><i class='far fa-address-card'></i></div>
+                    <div class="col-sm-1"><button style='font-size:24px'><i class='fas fa-coins'></i></button></div>
+                    <div class="col-sm-1"><button style='font-size:24px'><i class='fas fa-chart-bar'></i></button></div>
+                    <div class="col-sm-1"><button style='font-size:24px'><i class='fas fa-chart-line'></i></div>
+                    <div class="col-sm-1"><button style='font-size:24px'><i class='fas fa-money-check-alt'></i></div>
+                    <div class="col-sm-7" style="text-align: center;color: white;font: bold 20px/40px Arial;vertical-align: bottom;display: table-cell;">Tin Tức - Sự Kiện</div>
+                </div>
+                <div style="background-color: black;color: white; height: 50%">
+                    <ul>
+                        <li>SVN: Giải trình kết quả kinh doanh tại BCTC công ty mẹ 2016 (07/04/2017 10:55 )</li>
+                        <li>SVN: Ủy quyền cho ông Nguyễn Mạnh Cường - Giám đốc làm Người CBTT từ 31.3.2017 (24/03/2017)</li>
+                        <li>Cổ phiếu penny nông sản dậy sóng, cơ hội làm giàu hiếm có hay thất bại cay đắng trong uptrend? (07/03/2017 08:29)</li>
+                        <li>Lộ diện 12 nhà thầu đầu tư mua 10 triệu cổ phiếu SVN của Solavina với giá trị gấp 4 lần thị giá (27/02/2017 11:30)</li>
+                        <li>SNV: Nghị quyết HĐQT thông qua tiêu chí và lựa chọn nhà đầu tư chiến lực (27/02/ 10:40)</li>
+                        <li>Chỉ trong 1 tháng, cổ phiếu của công ty cung cấp rau cải xoăn "thần kỳ" đã tăng gấp đôi (26/02/2017 08:33)</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2" style="background-color: aqua;font: bold 14px/25px Arial">SVN</div>
+                    <div class="col-sm-10" style="background-color: gray;color: white;text-align: center;font: bold 14px/25px Arial">Copyright @ Nguyenduan93@gmail.com</div>
+                </div>
+            </div>
+
+            <div id="right" class="col-sm-4">
+
+                <table class="table" style="border: 5px;border-color: gray;">
+                    <tr>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;background-color: gray;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Hiện Tại</div>
+                        <div class="progress-bar" role="progressbar" style="width: 50%;background-color: gray;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Lịch Sử</div>
+                    </div>
+                    </tr>
+                    <tr style="color: white;font: bold 13px/10px Arial;">
+                        <th colspan="2" style="background-color: blue">TG</th>
+                        <th colspan="2" style="background-color: blue">KL</th>
+                        <th style="background-color: blue">Giá</th>
+                        <th colspan="5" style="background-color: blue;text-align: center">+/-</th>
+                    </tr>
+                    <script>
+                        for (var i = 0; i < 23; i++) {
+                            document.write("<tr style='background-color: black;font: bold 12px/4px Arial;'><td colspan='2' style='color: chartreuse;'>14:44</td><td colspan='2' style='color: chartreuse;'>2200</td><td style='color: chartreuse;'>2.6</td><td colspan='5' style='color: chartreuse;'>+0.1(+4.00%)</td></tr>");
+                        }
+                    </script>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
